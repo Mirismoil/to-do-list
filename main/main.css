@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #3ce74a;
+    animation: bg-color 10s infinite;
+}
+
+@keyframes bg-color {
+    0% {
+        background-color: #e7e43c;
+    }
+
+    20% {
+        background-color: #f1c40f;
+    }
+
+    40% {
+        background-color: #bc1a93;
+    }
+
+    60% {
+        background-color: #3498db;
+    }
+
+    80% {
+        background-color: #b65959;
+    }
+
+    100% {
+        background-color: #eeff00;
+    }
+}
+
+.form {
+    padding: 40px 10px;
+}
+
+.form__wrapper {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form__input {
+    background-color: aqua;
+    flex-grow: 1;
+    padding: 18px;
+    margin-right: 5px;
+}
+
+.form__btn {
+    padding: 18px 28px;
+    cursor: pointer;
+    animation: form-color 10s infinite;
+    background-color: crimson;
+}
+
+@keyframes form-color {
+    0% {
+        background-color: #bc1a93;
+    }
+
+    20% {
+        background-color: #f10f0f;
+    }
+
+    40% {
+        background-color: #27031e;
+    }
+
+    60% {
+        background-color: #002396;
+    }
+
+    80% {
+        background-color: #00a838;
+    }
+
+    100% {
+        background-color: #ffee00;
+    }
+}
+.box {
+    margin-top: 36px;
+    margin-left: 300px;
+}
+
+.task {
+    width: 800px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.task__input, .task__btn {
+    cursor: pointer;
+}
+
+.task__text {
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.task__btn {
+    margin-left: 5px;
+    animation: btn-color 10s infinite;
+    background-color: red;
+}
+@keyframes btn-color {
+    0% {
+        background-color: #00c9fc;
+    }
+
+    20% {
+        background-color: #4930bb;
+    }
+
+    40% {
+        background-color: #bc1a1a;
+    }
+
+    60% {
+        background-color: #ff00aa;
+    }
+
+    80% {
+        background-color: #48ff00;
+    }
+
+    100% {
+        background-color: #ff0000;
+    }
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    right: 0;
+    left: 500px;
+}
+
+.modal__body {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: black;
+    opacity: .5;
+    border-radius: 20px;
+}
+
+.modal__curtain {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.h1 {
+    margin-left: 48px;
+    width: 50px;
+    margin-bottom: 45px;
+}
+
+.butun1 {
+    padding: 15px 15px;
+    background-color: brown;
+    margin-left: 88px;
+    border-radius: 10px;
+    cursor: pointer;
+}
